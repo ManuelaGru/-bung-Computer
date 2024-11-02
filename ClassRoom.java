@@ -13,6 +13,19 @@ public class ClassRoom
         setMhz          (newMhz);
     }
     
+    public ClassRoom(String newHersteller, boolean newLaptop, int newPreis)
+    {
+        setHersteller   (newHersteller);
+        setLaptop       (newLaptop);
+        setPreis        (newPreis);
+    }
+    
+    public ClassRoom(int newPreis, String newHersteller)
+    {
+        setPreis(newPreis);
+        setHersteller(newHersteller);
+    }
+    
     public void setLaptop(boolean newLaptop)
     {
         laptop = newLaptop;
