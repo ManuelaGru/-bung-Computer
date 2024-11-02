@@ -1,20 +1,26 @@
 public class ClassRoom
 {
-    private String  hersteller;
     private boolean laptop;
+    private String  Hersteller;
     private int     preis;
     private int     mhz;
     
-    
-
-    public void setHersteller(String Hersteller)
+    public ClassRoom(String newHersteller, boolean newLaptop, int newPreis, int newMhz)
     {
-        hersteller = newHersteller;
+        setLaptop       (newLaptop);
+        setHersteller   (newHersteller);
+        setPreis        (newPreis);
+        setMhz          (newMhz);
     }
     
     public void setLaptop(boolean newLaptop)
     {
         laptop = newLaptop;
+    }
+    
+    public void setHersteller (String newHersteller)
+    {
+        Hersteller = newHersteller;
     }
     
     public void setPreis(int newPreis)
@@ -27,14 +33,14 @@ public class ClassRoom
         mhz = 2000;
     }
     
-    public String getHersteller()
-    {
-        return hersteller;
-    }
-    
     public boolean getLaptop()
     {
         return laptop;
+    }
+    
+    public String getHersteller()
+    {
+        return Hersteller;
     }
     
     public int getPreis()
