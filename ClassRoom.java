@@ -13,43 +13,46 @@ public ClassRoom(String newGebaeude, int newStock, boolean newBeamer, int newAnz
         setAnzPlaetze    (newAnzPlaetze);
     }
     
-    public void setGebaeude(String newGebaeude)
-    {
+public void setGebaeude(String newGebaeude)
+{
         gebaeude = newGebaeude;
-    }
+}
     
-    public void setStock (int newStock)
-    {
+public void setStock (int newStock)
+{
         stock = newStock;
-    }
+}
     
-    public void setBeamer(boolean newBeamer)
-    {
+public void setBeamer(boolean newBeamer)
+{
         beamer = newBeamer;
-    }
+}
     
-    public void setAnzPlaetze (int newAnzPlaetze)
-    {
+public void setAnzPlaetze (int newAnzPlaetze)
+{
         anzPlaetze = newAnzPlaetze;
-    }
+}
     
-    public String getGebaeude()
-    {
+public String getGebaeude()
+{
         return gebaeude;
-    }
+}
     
-    public int getStock()
-    {
+public int getStock()
+{
         return stock;
-    }
+}
     
-    public boolean getBeamer()
-    {
+public boolean getBeamer()
+{
         return beamer;
-    }    
+}    
     
-    public int getAnzPlaetze()
-    {
+public int getAnzPlaetze()
+{
         return anzPlaetze;
-    }
+}
+
+
+
 }
