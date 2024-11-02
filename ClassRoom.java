@@ -1,68 +1,55 @@
 public class ClassRoom
 {
-    private boolean laptop;
-    private String  Hersteller;
-    private int     preis;
-    private int     mhz;
-    
-    public ClassRoom(String newHersteller, boolean newLaptop, int newPreis, int newMhz)
+private String gebaeude;
+private int stock;
+private boolean beamer;
+private int anzPlaetze;
+ 
+public ClassRoom(String newGebaeude, int newStock, boolean newBeamer, int newAnzPlaetze)
     {
-        setLaptop       (newLaptop);
-        setHersteller   (newHersteller);
-        setPreis        (newPreis);
-        setMhz          (newMhz);
+        setGebaeude      (newGebaeude);
+        setStock         (newStock);
+        setBeamer        (newBeamer);
+        setAnzPlaetze    (newAnzPlaetze);
     }
     
-    public ClassRoom(String newHersteller, boolean newLaptop, int newPreis)
+    public void setGebaeude(String newGebaeude)
     {
-        setHersteller   (newHersteller);
-        setLaptop       (newLaptop);
-        setPreis        (newPreis);
+        gebaeude = newGebaeude;
     }
     
-    public ClassRoom(int newPreis, String newHersteller)
+    public void setStock (int newStock)
     {
-        setPreis(newPreis);
-        setHersteller(newHersteller);
+        stock = newStock;
     }
     
-    public void setLaptop(boolean newLaptop)
+    public void setBeamer(boolean newBeamer)
     {
-        laptop = newLaptop;
+        beamer = newBeamer;
     }
     
-    public void setHersteller (String newHersteller)
+    public void setAnzPlaetze (int newAnzPlaetze)
     {
-        Hersteller = newHersteller;
+        anzPlaetze = newAnzPlaetze;
     }
     
-    public void setPreis(int newPreis)
+    public String getGebaeude()
     {
-        preis = newPreis;
+        return gebaeude;
     }
     
-    public void setMhz (int newMhz)
+    public int getStock()
     {
-        mhz = 2000;
+        return stock;
     }
     
-    public boolean getLaptop()
+    public boolean getBeamer()
     {
-        return laptop;
-    }
-    
-    public String getHersteller()
-    {
-        return Hersteller;
-    }
-    
-    public int getPreis()
-    {
-        return preis;
+        return beamer;
     }    
     
-    public int getMhz()
+    public int getAnzPlaetze()
     {
-        return 2000;
+        return anzPlaetze;
     }
 }
