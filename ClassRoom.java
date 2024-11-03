@@ -1,58 +1,48 @@
 public class ClassRoom
 {
-private String gebaeude;
-private int stock;
-private boolean beamer;
-private int anzPlaetze;
+private String roomNr;      // consists of building floor and room number
+private boolean computer;   //are there computers?
+private int size;           //number of seats
+
+/*
+ * Constructor
+ * Parameters: Room number, computer, size
+ * It is creating a new instance
+ */
+public ClassRoom(String newRoomNr, boolean newComputer, int newSize)
+{
+    setRoomNr(newRoomNr);
+    setComputer(newComputer);
+    setSize(newSize);
+}
+
+public void setRoomNr(String newRoomNr)
+{
+    roomNr = newRoomNr;
+}
+
+public void setComputer(boolean newComputer)
+{
+    computer = newComputer;
+}
+
+public void setSize(int newSize)
+{
+    size = newSize;
+}
  
-public ClassRoom(String newGebaeude, int newStock, boolean newBeamer, int newAnzPlaetze)
-    {
-        setGebaeude      (newGebaeude);
-        setStock         (newStock);
-        setBeamer        (newBeamer);
-        setAnzPlaetze    (newAnzPlaetze);
-    }
-    
-public void setGebaeude(String newGebaeude)
+public String getRoomNr()
 {
-        gebaeude = newGebaeude;
-}
-    
-public void setStock (int newStock)
-{
-        stock = newStock;
-}
-    
-public void setBeamer(boolean newBeamer)
-{
-        beamer = newBeamer;
-}
-    
-public void setAnzPlaetze (int newAnzPlaetze)
-{
-        anzPlaetze = newAnzPlaetze;
-}
-    
-public String getGebaeude()
-{
-        return gebaeude;
-}
-    
-public int getStock()
-{
-        return stock;
-}
-    
-public boolean getBeamer()
-{
-        return beamer;
-}    
-    
-public int getAnzPlaetze()
-{
-        return anzPlaetze;
+    return roomNr;
 }
 
+public boolean getComputer()
+{
+    return computer;
+}
 
-
+public int getSize()
+{
+    return size;
+}
 }
